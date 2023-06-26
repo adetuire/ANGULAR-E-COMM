@@ -1,19 +1,86 @@
-<div class="card landing-card">
-    <h2>Welcome to our Shoe Store!</h2>
-    <p>Discover a wide range of stylish and comfortable shoes for every occasion.</p>
-    <div class="product-grid">
-        <div class="product-item">
-            <img src="path/to/product-image.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <span class="price">$99.99</span>
-            <button>Add to Cart</button>
+<body>
+    <!--======== MAIN HEADER ========-->
+    <header class="l-header">
+        <!--===== NAV ======-->
+        <nav class="nav bg-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <img src="assets/img/icon-menu.svg">
+            </div>
+
+            <div>
+                <a href="#" class="nav_logo"><img src="assets/img/nike-logo.svg" alt=""></a>
+            </div>
+
+            <!--======= nav list =========-->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#" class="nav_link">Sign Up</a></li>
+                    <li class="nav_item"><a href="app/login" class="nav_link">Log In</a></li>
+                </ul>
+            </div>
+
+            <div class="nav_shop">
+                <img src="assets/img/shopping-bag.svg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bg-grid">
+        <div class="home">
+            <div class="sneaker">
+                <div class="sneaker_figure"></div>
+                <div>
+                    <img src="assets/img/NikeAirMaxMotion2.png" class="sneaker_img shows" color="#a29596" alt="">
+                    <img src="assets/img/NikeAirMax Motion2black.png" class="sneaker_img" color="#111111" alt="">
+                </div>
+
+                <div class="sneaker_colors">
+                    <span class="sneaker_color sneaker_colors-one active" primary="#a29596" color="#a29596"></span>
+                    <span class="sneaker_color sneaker_olors-two" primary="#111111" color="#111111"></span>
+                </div>
+            </div>
+
+            <div class="info">
+                <!-- ===== DATA ===== -->
+                <div class="data">
+                    <span class="data__subtitle">Nike</span>
+                    <h1 class="data__title">Air Max Motion 2</h1>
+                    <!-- <p class="data__description">Combinan la malla transpirable sin costuras para <br> un estilo tradicional.</p> -->
+                </div>
+
+                <!-- ===== ACTIONS ===== -->
+                <div class="actions">
+                    <!-- ===== SIZE ===== -->
+                    <div class="size">
+                        <h3 class="size_title">Size</h3>
+                        <div class="size_content">
+                            <span class="size_tallas active">
+                                8.5
+                            </span>
+                            <span class="size_tallas">
+                                9
+                            </span>
+                            <span class="size_tallas">
+                                9.5
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <h3 class="cart_title">Amount</h3>
+                        <div class="cart_content"> 
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="price_title">N45,000</span>
+                    <a href="#" class="price_button">ADD TO CART</a>
+                </div>
+            </div>
         </div>
-        <div class="product-item">
-            <!-- Add more product items here -->
-        </div>
-        <div class="product-item">
-            <!-- Add more product items here -->
-        </div>
-    </div>
-</div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
